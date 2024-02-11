@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'memorize_app/css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'memorize_app/css/header.css'%}"/>
+    <link rel="stylesheet" href="{% static 'memorize_app/css/footer.css'%}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    {% block styles %}
+    {% endblock %}
+  </head>
+  <body>
+    <div id="root">
+      {% include "memorize_app/header.html" %}
+      {% block content %}
+      {% endblock %}
+      {% include "memorize_app/footer.html" %}
+    </div>
+  </body>
+</html>

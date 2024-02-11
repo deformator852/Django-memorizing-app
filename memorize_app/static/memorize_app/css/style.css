@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Itim", sans-serif;
+}
+::placeholder {
+  font-family: "Itim", sans-serif;
+  color: #000000;
+}
+
+#root {
+  width: 1198px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

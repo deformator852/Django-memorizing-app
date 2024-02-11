@@ -1,0 +1,20 @@
+{% extends "memorize_app/base.html" %} {% load static %} {% block styles %}
+<link
+  rel="stylesheet"
+  href="{% static 'memorize_app/css/registration.css' %}"
+/>
+{% endblock %} {% block content%}
+<div class="registration">
+  <p class="registration__title">Register</p>
+  <form class="registration__form" method="post">
+    {% csrf_token %} {{form.as_div}}
+    <!-- <input type="text" name="" placeholder="Username" /> -->
+    <!-- <input type="email" name="" placeholder="E-mail" /> -->
+    <!-- <input type="password" name="" placeholder="Password" /> -->
+    <!-- <input type="password" name="" placeholder="Confirm Password" /> -->
+    <button class="registration__create-account-button" type="submit">
+      Create account
+    </button>
+  </form>
+</div>
+{% endblock %}
